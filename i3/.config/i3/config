@@ -1,4 +1,4 @@
-################# Start of all the settings
+################ Start of all the settings
 
 # KEY DEFINITIONS TO REMEMBER
 # $mod = Set below
@@ -15,22 +15,18 @@
 
 ################# Define the $mod variable/key
 
-# Key to rule them all : Super(Windows) or Alt key - see definition above
-# set Super key
 set $mod Mod4
 
 ################# Define the movements keys - variables
 
-# This is setup for qwerty
-# set $right to m if using azerty keyboard
 set $up k
 set $down j
 set $left h
 set $right l 
 
 ################# Toggle off mouse follow 
-focus_follows_mouse no
 
+focus_follows_mouse no
 
 ################# Single and Dual screen
 
@@ -822,14 +818,25 @@ bar {
 
 ################# Scratchpad
 
-# NOT USED
-
 # move the currently focused window to the scratchpad
-# bindsym Mod1+Shift+minus move scratchpad
+bindsym Mod1+Shift+minus move scratchpad
 
 # Show the next scratchpad window or hide the focused scratchpad window.
 # If there are multiple scratchpad windows, this command cycles through them.
-# bindsym Mod1+minus scratchpad show
+bindsym Mod1+Shift+plus scratchpad show; move position center
+
+
+## NOT WORKING
+#for_window [class="xfce4-terminal"] floating enable, resize set 1000 600, move scratchpad, border pixel 0
+#bindsym $mod+n [class="xfce4-terminal"] scratchpad show; move position center
+#exec --no-startup-id xfce4-terminal --class xfce4-terminal,xfce4-terminal -e tmux
+
+#bindsym $mod+n [instance="Alacritty"] [class="Alacritty"] scratchpad show; move position center
+#exec --no-startup-id alacritty --class Alacritty,Alacritty -e tmux
+
+#for_window [instance="dropdown"] [class="xfce4-terminal"] floating enable, resize set 1000 600, move scratchpad, border pixel 0
+#exec --no-startup-id xfce4-terminal -n dropdown -e tmux
+#bindsym $mod+n [instance="dropdown"] [class="xfce4-terminal"] scratchpad show; [instance="term-dropdown"] move position center
 
 
 ################# mouse settings in i3             
