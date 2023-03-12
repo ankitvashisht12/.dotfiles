@@ -489,7 +489,7 @@ export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 # av alias
 alias qconfig='nvim ~/.config/qtile/config.py'
 alias qdefault='nvim /usr/share/doc/qtile/default_config.py'
-alias i3c='nvim ~./config/i3'
+alias i3c='nvim ~/.config/i3'
 
 #alias tars='cd ~/Tars/Developement/'
 
