@@ -661,3 +661,6 @@ bindsym Mod1+Shift+plus scratchpad show; move position center
 
 ################# Swap Excape with Caps lock key
 exec --no-startup-id xmodmap ~/.Xmodmap
+
+## fallback if sxhkd fails to run
+bindsym $mod+mod1+d exec --no-startup-id ~/.config/i3/launcher/launcher.sh 
