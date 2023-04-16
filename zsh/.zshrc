@@ -509,6 +509,16 @@ alias sg='ssh-add ~/.ssh/github_id_ed25519'
 alias sc='ssh-add ~/.ssh/convStagingPair.pem'
 alias sp='ssh-add ~/.ssh/av_prod'
 
+
+### for tars dashboard build
+alias prod_build='npm run build -- --env.use_cdn=true'
+
+alias tadmin='cd ~/Tars/Development/tars-admin-dashboard/'
+alias tbackend='cd ~/Tars/Development/tars-chatbot/'
+alias toldf='cd ~/Tars/Development/tars-chatbot-frontend/'
+alias tnewf='cd ~/Tars/Development/tars-chatbot/frontend/'
+alias tai='cd ~/Tars/Development/tars-ai-poc/'
+
 tars(){
   if [ "$#" -gt 0 ] && [ "$1" = "clog" ] ; then
     shift
